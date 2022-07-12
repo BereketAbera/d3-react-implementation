@@ -1,3 +1,3 @@
-# Algo Vis
+# D3 react implementation
 
-A way to visualize data structures and algorithms.
+Implementation of common visualization using d3 and react
