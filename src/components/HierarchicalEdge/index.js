@@ -4,16 +4,6 @@ import * as d3 from 'd3';
 import './hierarchicalEdge.css';
 
 import flare from './flare.json';
-import cloneFlare from './flareClone.json';
-
-// console.log(
-//   cloneFlare[0],
-//   '***Clone Flare***',
-//   flare[0],
-//   '***Original Flare***',
-// );
-
-// console.log(cloneFlare, '***FLARE***');
 
 export default function HierarchicalEdge({ ...props }) {
   const canvas = useRef();
