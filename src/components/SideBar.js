@@ -1,6 +1,6 @@
-import React from 'react'
-import styled from 'styled-components'
-import Button from './Button'
+import React from 'react';
+import styled from 'styled-components';
+import Button from './Button';
 import {
   BsBarChart,
   BsBoxSeam,
@@ -10,26 +10,26 @@ import {
   BsMegaphone,
   BsNodePlus,
   BsStack,
-} from 'react-icons/bs'
+} from 'react-icons/bs';
 
-import { FaList } from 'react-icons/fa'
+import { FaList } from 'react-icons/fa';
 
 function SideBar({ sideBarOpen, setSideBarOpen, children, ...props }) {
   return (
     <div
-      className={`${sideBarOpen ? 'w-16' : 'w-8'}`}
+      className={`${
+        sideBarOpen ? 'w-32' : 'w-20'
+      } fixed top-0 left-0 bottom-0 p-2`}
       style={{
         // minWidth: sideBarOpen ? '12rem' : '4rem',
         transition: 'all .5s',
         borderRight: `1px solid #fff`,
-        minHeight: `110vh`,
-        boxSizing: 'border-box',
       }}
       {...props}
     >
       <button
         onClick={() => {
-          setSideBarOpen(!sideBarOpen)
+          setSideBarOpen(!sideBarOpen);
         }}
         className="text-2xl flex justify-center items-center w-full text-white p-2 mb-4 mt-2 hover:border-none hover:outline-none focus:border-none focus:outline-none"
       >
@@ -95,7 +95,7 @@ function SideBar({ sideBarOpen, setSideBarOpen, children, ...props }) {
         <BsMegaphone />
       </Button>
     </div>
-  )
+  );
 }
 
-export default SideBar
+export default SideBar;
